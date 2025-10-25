@@ -1,0 +1,14 @@
+name = "academia-os"
+account_id = "YOUR_ACCOUNT_ID"
+compatibility_date = "2025-10-25"
+workers_dev = true
+
+[build]
+  command = "bun run build"
+  upload = { format = "modules" }
+
+# Optional: add durable object / KV / secret bindings here. Example:
+# [durable_objects]
+#   bindings = [{ name = "MY_DO", class_name = "MyDurableObject" }]
+# [kv_namespaces]
+#   binding = "MY_KV"
